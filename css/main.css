@@ -26,6 +26,10 @@ a:hover {
   border: .05rem solid #fff;
 }
 
+.btn-twitter{
+  background-color: #1DA1F2;
+}
+
 
 /*
  * Base structure
