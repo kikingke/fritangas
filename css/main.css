@@ -5,117 +5,47 @@
   --mint: #3DAA7F;
   --green: #02C39A;
   }
-/*
- * Globals
- */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
+.fondo{
+    min-height: 100vh;
+    background: url(../img/background1.png) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-/* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+.footer{
+    background-color: var(--gris) !important;
 }
 
-.btn-twitter{
-  background-color: #1DA1F2;
+.header-inner{
+  padding: 200px;
 }
 
+.dark-overlay{
+      background-color: rgba(0,0,0,0.3);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      min-height: 100%;
+      transition: all 1s ease;
+}
 
-/*
- * Base structure
- */
+.fondo1{
 
-html,
-body {
-  height: 100%;
-  /*background-color: #333;*/
-  background: #ED213A;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-body {
-  display: -ms-flexbox;
-  display: flex;
-  color: #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
-  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+.bg-custom{
+  background-color: var(--gris) !important;
+  transition: all 1s ease;
 }
 
-.cover-container {
-  max-width: 42em;
+.navbar-custom{
+  background-color: var(--gunmetal) !important;
+  transition: all 1s ease;
 }
 
-
-/*
- * Header
- */
-.masthead {
-  margin-bottom: 2rem;
-}
-
-.masthead-brand {
-  margin-bottom: 0;
-}
-
-.nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
-  border-bottom: .25rem solid transparent;
-}
-
-.nav-masthead .nav-link:hover,
-.nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
-}
-
-.nav-masthead .nav-link + .nav-link {
-  margin-left: 1rem;
-}
-
-.nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
-}
-
-
-/*
- * Cover
- */
-.cover {
-  padding: 0 1.5rem;
-}
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
-  font-weight: 700;
-}
-
-
-/*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,1);
 }
