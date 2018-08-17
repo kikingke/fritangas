@@ -47,7 +47,7 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
 }
 
 .navbar-custom{
-  background-color: var(--gunmetal) !important;
+  /*background-color: var(--gunmetal) !important;*/
   transition: all 1s ease;
 }
 
