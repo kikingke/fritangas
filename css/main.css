@@ -59,13 +59,19 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
     .header-inner{
         padding: 50px;
     }
+    .fa-18 {
+        font-size: 10rem !important;
+    }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
 
     .header-inner{ 
-       padding: 90px;
+         padding: 90px;
+    }
+    .fa-18 {
+        font-size: 12rem !important;
     }
 
 }
@@ -75,6 +81,9 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
     .header-inner{ 
            padding: 120px;
     }
+    .fa-18 {
+        font-size: 12rem !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up)*/
@@ -82,11 +91,17 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
     .header-inner{
         padding: 200px;
     }
+    .fa-18 {
+        font-size: 18rem !important;
+    }
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
     .header-inner{
         padding: 200px;
+    }
+    .fa-18 {
+        font-size: 18rem !important;
     }
 }
