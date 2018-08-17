@@ -22,9 +22,6 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
     background-color: var(--gris) !important;
 }
 
-.header-inner{
-  padding: 200px;
-}
 
 .dark-overlay{
       background-color: rgba(0,0,0,0.3);
@@ -53,4 +50,43 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
 
 .navbar-dark .navbar-nav .nav-link {
     color: rgba(255,255,255,1);
+}
+
+
+
+/* Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+    .header-inner{
+        padding: 50px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+    .header-inner{ 
+       padding: 90px;
+    }
+
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .header-inner{ 
+           padding: 120px;
+    }
+}
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .header-inner{
+        padding: 200px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+    .header-inner{
+        padding: 200px;
+    }
 }
