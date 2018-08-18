@@ -1,26 +1,47 @@
 
 :root{
   --gunmetal:rgba(88, 88, 88, .4);
-  --gris:#585858;
+  --gris: #C7260A;
   --mint: #3DAA7F;
   --green: #02C39A;
+  --rojopaco: rgba(199,38,10,.4);
+
   }
 
-.fondo{
-    min-height: 100vh;
-   /* background: url(../img/background1.png) no-repeat;*/
-    background-size: cover;
-    background-attachment: fixed;
-  
-  background: #ED213A;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
+.fondo{
+
+ 
+   min-height: 100vh;
+    background: url(../img/fondotanga.jpg) no-repeat fixed;
+
+   /* background-attachment: fixed;*/
+  
+  /*background: #ED213A;  
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  
+background: linear-gradient(to right, #93291E, #ED213A); 
+background: url(http://p1.pichost.me/i/66/1910819.jpg) no-repeat center center fixed; */
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+/*  height: 100%;*/
+
+
+}
+
+footer{
+  background: var(--gris) !important;
 }
 
 .footer{
-    background-color: var(--gris) !important;
+    background-color: var(--rojopaco) !important;
+      -webkit-box-shadow: 0px 5px 22px 1px rgba(0,0,0,0.61);
+-moz-box-shadow: 0px 5px 22px 1px rgba(0,0,0,0.61);
+box-shadow: 0px 5px 22px 1px rgba(0,0,0,0.61);
 }
+
 
 
 .dark-overlay{
@@ -29,23 +50,33 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
       top: 0;
       left: 0;
       width: 100%;
-      min-height: 100%;
-      transition: all 1s ease;
+      height: 100%;
 }
 
-.fondo1{
+    .letrasconfondo{
+        color: white; /* Fallback: assume this color ON TOP of image */
+        background: url(../img/fondotanga.jpg) no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+     
+        width: 100%;
+          background-size: cover;
+    }
 
 
-}
 
 .bg-custom{
-  background-color: var(--gris) !important;
+  background-color: var(--rojopaco) !important;
   transition: all 1s ease;
+  -webkit-box-shadow: 0px 5px 22px 1px rgba(0,0,0,0.61);
+  -moz-box-shadow: 0px 5px 22px 1px rgba(0,0,0,0.61);
+  box-shadow: 0px 5px 22px 1px rgba(0,0,0,0.61);
 }
 
 .navbar-custom{
   /*background-color: var(--gunmetal) !important;*/
   transition: all 1s ease;
+
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -53,55 +84,82 @@ background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, F
 }
 
 
+    .header-inner{ 
+         padding-top: 200px;
+    }
+
+
+
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
-    .header-inner{
-        padding: 50px;
+
+    .header-inner h1 {
+        padding: 25px 45px;
+        font-weight: 900;
+        font-size: 3rem;
+        transition: all 1s ease;
     }
-    .fa-18 {
-        font-size: 10rem !important;
-    }
+
+
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
 
-    .header-inner{ 
-         padding: 90px;
+    .header-inner h1{ 
+         padding: 90px 45px;
+            font-weight: 900;
+        font-size: 5rem;
+        transition: all 1s ease;
+
     }
-    .fa-18 {
-        font-size: 12rem !important;
-    }
+
 
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
-    .header-inner{ 
-           padding: 120px;
+    .header-inner h1 {
+        padding: 90px 45px;
+        font-weight: 900;
+        font-size: 7rem;
+        transition: all 1s ease;
     }
-    .fa-18 {
-        font-size: 12rem !important;
-    }
+
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-    .header-inner{
-        padding: 200px;
+
+      .header-inner h1 {
+        padding: 90px 45px;
+        font-weight: 900;
+        font-size: 7rem;
+        transition: all 1s ease;
     }
-    .fa-18 {
-        font-size: 18rem !important;
-    }
+
+
 }
 
 /* Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
-    .header-inner{
-        padding: 200px;
+
+ .header-inner h1 {
+        padding: 90px 45px;
+        font-weight: 900;
+        font-size: 8rem;
+        transition: all 1s ease;
     }
-    .fa-18 {
-        font-size: 18rem !important;
-    }
+
+
+}
+
+@media (min-width: 992px) and (max-width: 4096px) {
+
+      .nav-item a{
+        font-size: 1.6rem;
+      }
+
+
 }
