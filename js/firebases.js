@@ -11,5 +11,12 @@ var config = {
   firebase.initializeApp(config);
   
   app_firebase = firebase;
+    
+    function fnCreate(path, body, callBack){
+        if(path || !body){
+		    return;		
+	    }
+        app_firebase.database().ref(path).set(body, callBack);
+    }
 
 })
