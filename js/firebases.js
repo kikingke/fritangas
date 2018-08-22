@@ -1,4 +1,4 @@
-var app_firebase = {};
+var app_fireBase = {};
 (function(){
 var config = {
     apiKey: "AIzaSyCZmaSdOSRPIuCRNhyPCgS5LoQHO-SlBOk",
@@ -10,13 +10,20 @@ var config = {
   };
   firebase.initializeApp(config);
   
-  app_firebase = firebase;
+  app_fireBase = firebase;
     
     function fnCreate(path, body, callBack){
         if(path || !body){
 		    return;		
 	    }
-        app_firebase.database().ref(path).set(body, callBack);
+        app_fireBase.database().ref(path).set(body, callBack);
     }
+	
+	app_fireBase.databaseApi = {
+		create: fnCreate,
+		read: fnRead,
+		update: fnUpdate,
+		delete: fnDelete
+	}
 
 })
