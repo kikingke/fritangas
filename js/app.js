@@ -6,7 +6,9 @@ var firebase = app_firebase;
   firebase.auth().onAuthStateChanged(function(user){
     if(user){
       uid = user.uid;
+       console.log(uid);
     }else{
+      console.log("redirect");
       uid = null;
       window.location.replace("login.html");
     }
