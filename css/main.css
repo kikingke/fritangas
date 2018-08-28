@@ -55,7 +55,7 @@ box-shadow: 0px 5px 22px 1px rgba(0,0,0,0.61);
 
     .letrasconfondo{
         color: white; /* Fallback: assume this color ON TOP of image */
-        background: url(../img/fondotanga.jpg) no-repeat;
+      /*  background: url(../img/fondotanga.jpg) no-repeat;*/
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
      
