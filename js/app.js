@@ -9,7 +9,7 @@ $(document).ready(function(){
  function load_json_data(id, parent_id)
  {
   var html_code = '';
-  $.getJSON('mundep.json', function(data){
+  $.getJSON('js/mundep.json', function(data){
 
    html_code += '<option value="">Select '+id+'</option>';
    $.each(data, function(key, value){
