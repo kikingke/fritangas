@@ -1,3 +1,7 @@
+(function(){
+
+
+
 $(document).ready(function(){
 
  load_json_data('country');
@@ -53,3 +57,5 @@ $(document).ready(function(){
   }
  });
 });
+ 
+ })
