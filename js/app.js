@@ -45,17 +45,17 @@ $(document).ready(function(){
    $('#city').html('<option value="">Select city</option>');
   }
  });
- $(document).on('change', '#state', function(){
-  var state_id = $(this).val();
-  if(state_id != '')
-  {
-   load_json_data('city', state_id);
-  }
-  else
-  {
-   $('#city').html('<option value="">Select city</option>');
-  }
- });
+//  $(document).on('change', '#state', function(){
+//   var state_id = $(this).val();
+//   if(state_id != '')
+//   {
+//    load_json_data('city', state_id);
+//   }
+//   else
+//   {
+//    $('#city').html('<option value="">Select city</option>');
+//   }
+//  });
 });
  
  })
