@@ -10,20 +10,6 @@ var config = {
   };
   firebase.initializeApp(config);
   
-  app_fireBase = firebase;
-    
-    function fnCreate(path, body, callBack){
-        if(path || !body){
-		    return;		
-	    }
-        app_fireBase.database().ref(path).set(body, callBack);
-    }
-	
-	app_fireBase.databaseApi = {
-		create: fnCreate,
-		read: fnRead,
-		update: fnUpdate,
-		delete: fnDelete
-	}
+
 
 })
